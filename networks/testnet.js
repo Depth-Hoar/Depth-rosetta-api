@@ -4,7 +4,7 @@ const metadata = require('./metadata/testnet-metadata.json');
 module.exports = {
   blockchain: 'Substrate',
   network: 'Dock Testnet',
-  nodeAddress: 'wss://danforth-1.dock.io',
+  nodeAddress: 'ws://localhost:9944',
   ss58Format: 42,
   properties: {
     ss58Format: 42,

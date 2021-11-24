@@ -3,6 +3,9 @@
   "LookupSource": "AccountId",
   "Keys": "SessionKeys2",
   "Did": "[u8;32]",
+  "ChainId": "u8",
+  "DepositNonce": "u64",
+  "ResourceId": "[u8; 32]",
   "Bytes32": {
     "value": "[u8;32]"
   },

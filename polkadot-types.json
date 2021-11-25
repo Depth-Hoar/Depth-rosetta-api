@@ -6,6 +6,12 @@
   "ChainId": "u8",
   "DepositNonce": "u64",
   "ResourceId": "[u8; 32]",
+  "ProposalVotes": {
+	  "votes_for": "Vec<AccountId>",
+	  "votes_against": "Vec<AccountId>",
+	  "staus": "ProposalStatus",
+	  "expiry": "BlockNumber"
+},
   "Bytes32": {
     "value": "[u8;32]"
   },

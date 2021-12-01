@@ -1,5 +1,6 @@
 import { ApiPromise, WsProvider } from '@polkadot/api';
 import RosettaSDK from 'rosetta-node-sdk';
+import { spec } from '@edgeware/node-types';
 
 import networkIdentifiers from '../network';
 import Registry from '../offline-signing/registry';
@@ -22,7 +23,7 @@ class SubstrateNetworkConnection {
 
     this.api = await ApiPromise.create({
       provider: new WsProvider(this.nodeAddress),
-      types: this.types,
+      types: this.types, ...spec,
     });
 
     return this.api;

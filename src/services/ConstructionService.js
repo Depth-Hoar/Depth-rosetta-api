@@ -4,7 +4,7 @@ import BN from 'bn.js';
 import {
   decode,
   getTxHash,
-} from '@substrate/txwrapper';
+} from '@substrate/txwrapper-core';
 
 import {
   u8aToHex,

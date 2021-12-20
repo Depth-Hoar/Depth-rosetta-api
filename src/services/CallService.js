@@ -4,7 +4,7 @@ import {
 
 import {
   methods,
-} from '@substrate/txwrapper';
+} from '@substrate/txwrapper-core';
 
 import {
   ERROR_PARSE_INTENT,

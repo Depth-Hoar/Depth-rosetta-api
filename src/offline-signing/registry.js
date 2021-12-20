@@ -1,6 +1,6 @@
 import { TypeRegistry } from '@polkadot/types';
 import { getSpecTypes } from '@polkadot/types-known';
-import { createMetadata } from '@substrate/txwrapper/lib/util/metadata';
+import { createMetadata } from '@substrate/txwrapper-core/lib/core/metadata';
 
 /**
  * A registry class that stores the types, metadata and chain information.

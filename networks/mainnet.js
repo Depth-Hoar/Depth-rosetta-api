@@ -4,10 +4,10 @@ const metadata = require('./metadata/mainnet-metadata.json');
 module.exports = {
   blockchain: 'Substrate',
   network: 'Edgeware',
-  nodeAddress: 'ws://localhost:9944', // This expects you have a synced local node running!
-  ss58Format: 22, // may need to change
+  nodeAddress: 'ws://localhost:9944', // This expects you have a synced local node running! (Should be an archive node. Can use this one to test 'wss://edgeware.api.onfinality.io/public-ws')
+  ss58Format: 7,
   properties: {
-    ss58Format: 22, // may need to change
+    ss58Format: 22,
     tokenDecimals: 18,
     tokenSymbol: 'EDG',
     poaModule: {
@@ -19,7 +19,7 @@ module.exports = {
   specName: 'Edgeware',
   // Next 2 fields need to change whenever they change on the chain.
   specVersion: 46,
-  transactionVersion: 1, // TODO change
+  transactionVersion: 1,
   types,
   metadataRpc: metadata.metadataRpc,
 };

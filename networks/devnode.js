@@ -8,7 +8,7 @@ module.exports = {
   ss58Format: 42,
   properties: {
     ss58Format: 42,
-    tokenDecimals: 6,
+    tokenDecimals: 18,
     tokenSymbol: 'tEDG',
     poaModule: {
       treasury: '5EYCAe5d818kja8P5YikNggRz4KxztMtMhxP6qSTw7Bwahwq',

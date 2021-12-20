@@ -1,6 +1,6 @@
 request_funds(1){
   find_account{
-    currency = {"symbol":"DCK", "decimals":6};
+    currency = {"symbol":"EDG", "decimals":18};
     random_account = find_balance({
       "minimum_balance":{
         "value": "0",
@@ -26,7 +26,7 @@ request_funds(1){
 
 create_account(1){
   create{
-    network = {"network":"Dock Mainnet", "blockchain":"Substrate"};
+    network = {"network":"Edgeware", "blockchain":"Substrate"};
     key = generate_key({"curve_type": "edwards25519"});
     account = derive({
       "network_identifier": {{network}},
@@ -43,8 +43,8 @@ create_account(1){
 
 transfer(1){
   transfer{
-    transfer.network = {"network":"Dock Mainnet", "blockchain":"Substrate"};
-    currency = {"symbol":"DCK", "decimals":6};
+    transfer.network = {"network":"Edgeware", "blockchain":"Substrate"};
+    currency = {"symbol":"EDG", "decimals":18};
     sender = find_balance({
       "minimum_balance":{
         "value": "10000",

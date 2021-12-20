@@ -1,7 +1,7 @@
 import {
   createSigningPayload,
   methods,
-} from '@substrate/txwrapper';
+} from '@substrate/txwrapper-core';
 
 /**
  * Build a transfer txn

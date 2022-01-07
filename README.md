@@ -1,5 +1,5 @@
 ## Substrate/PolkadotJS Rosetta API
-This is Dock's implementation of the [Rosetta API](https://github.com/coinbase/rosetta-specifications) for our Subsrate blockchain, written in NodeJS using PolkadotJS. Currently in development but mostly done. Any suggestions or improvements are welcome. This isn't considered production ready yet but you can go ahead and try it.
+This is Edgeware's implementation of the [Rosetta API](https://github.com/coinbase/rosetta-specifications) for our Subsrate blockchain, written in NodeJS using PolkadotJS.
 
 ## Prerequisites
 Install Yarn or NPM, run the usual `yarn install` or `npm install`.
@@ -8,7 +8,7 @@ Install Yarn or NPM, run the usual `yarn install` or `npm install`.
 Run `yarn dev` to run a development instance of the API. Default port is 8080. Check the rosetta-cli configuration files in `/rosetta-cli`. Rosetta CLI usage is [better documented here](https://github.com/coinbase/rosetta-cli), but the main files to check are:
 - rosetta-cli/devnode/config.json (connects to local substrate node)
 - rosetta-cli/mainnet/config.json (connects to local mainnet node)
-- rosetta-cli/testnet/config.json (connects to dock testnet directly)
+- rosetta-cli/testnet/config.json (connects to local testnet directly)
 
 ## Starting
 - Online mode: `yarn start`
@@ -19,7 +19,7 @@ Run `yarn dev` to run a development instance of the API. Default port is 8080. C
 - Build: `docker build -t docknetwork/rosetta-api .`
 
 ## Adding a custom network
-Note the configuration files in the `networks` directory. To add a custom network, copy one of the files and change the parameters. You will need to also export your chain metadata and ensure its defined in the network configuration. You also need to import the proper types JSON, similar to `./polkadot-types.json`. Network configuration files are automatically loaded when the API initializes.
+Note the configuration files in the `networks` directory. To add a custom network, copy one of the files and change the parameters. You will need to also export your chain metadata and ensure its defined in the network configuration. You also need to import the proper types JSON, similar to [spec edgeware-node-types](https://github.com/hicommonwealth/edgeware-node-types) or ./polkadot-types.json`. Network configuration files are automatically loaded when the API initializes.
 
 ## Inspecting/Debugging
 We use Rosetta Inspector to check that the API is running properly, you can do that like so using Docker:
